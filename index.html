@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TrustSign India | DSC, PAN, GST & Online Government Services in Kishanganj</title>
+    <title>TrustSign Digital Suvidha Kendra</title>
 
-    <meta name="description" content="TrustSign India Kishanganj - Digital Signature Certificate, PAN Card, GST, EPF, Contractor Licence, RTPS and online government document services.">
-    <meta name="keywords" content="DSC Kishanganj, Digital Signature Kishanganj, PAN Card Kishanganj, GST Kishanganj, TrustSign India, Document Suvidha Kendra">
-    <meta name="author" content="TrustSign India">
+    <meta name="description" content="TrustSign Digital Suvidha Kendra - Digital Signature, PAN, GST, Government and Online Services in Kishanganj, Bihar.">
+    <meta name="keywords" content="TrustSign Digital Suvidha Kendra, DSC Kishanganj, PAN Card Kishanganj, GST Kishanganj, Digital Signature Kishanganj">
+    <meta name="author" content="TrustSign Digital Suvidha Kendra">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <script>
         tailwind.config = {
@@ -34,46 +34,46 @@
             scroll-behavior: smooth;
         }
 
-        .hero-bg {
+        body {
+            overflow-x: hidden;
+        }
+
+        .hero {
             background:
-                linear-gradient(135deg, rgba(11,29,58,.98), rgba(30,64,175,.92)),
-                radial-gradient(circle at top right, rgba(22,163,74,.25), transparent 40%);
+                linear-gradient(135deg, #07152d 0%, #0B1D3A 50%, #123c78 100%);
         }
 
         .service-card {
-            transition: all .3s ease;
+            transition: .3s ease;
         }
 
         .service-card:hover {
-            transform: translateY(-6px);
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(0,0,0,.10);
         }
 
-        .glass {
-            background: rgba(255,255,255,.08);
-            backdrop-filter: blur(10px);
-        }
-
-        .whatsapp {
+        .floating-whatsapp {
             position: fixed;
-            right: 20px;
-            bottom: 20px;
-            z-index: 100;
+            right: 18px;
+            bottom: 18px;
+            z-index: 999;
         }
 
-        .call-button {
+        .floating-call {
             position: fixed;
-            left: 20px;
-            bottom: 20px;
-            z-index: 100;
+            left: 18px;
+            bottom: 18px;
+            z-index: 999;
         }
     </style>
 </head>
 
 <body class="bg-slate-50 text-slate-800">
 
-<!-- =========================================================
+
+<!-- =====================================================
      TOP BAR
-========================================================= -->
+===================================================== -->
 
 <div class="bg-brandDark text-white text-xs sm:text-sm py-2 px-4">
 
@@ -107,25 +107,27 @@
         </div>
 
     </div>
+
 </div>
 
 
-<!-- =========================================================
+<!-- =====================================================
      HEADER
-========================================================= -->
+===================================================== -->
 
 <header class="bg-white shadow-md sticky top-0 z-50">
 
     <div class="max-w-7xl mx-auto px-4 py-3
                 flex justify-between items-center">
 
-        <!-- LOGO -->
+        <!-- LOGO / BRAND -->
 
         <a href="#home" class="flex items-center gap-3">
 
-            <div class="bg-brandDark text-white p-2 rounded-xl
-                        font-bold text-xl flex items-center justify-center
-                        w-12 h-12 border-2 border-brandGreen">
+            <div class="bg-brandDark text-white rounded-xl
+                        flex items-center justify-center
+                        w-12 h-12 font-extrabold text-xl
+                        border-2 border-green-500">
 
                 TS
 
@@ -133,17 +135,17 @@
 
             <div>
 
-                <h1 class="text-xl sm:text-2xl font-extrabold
-                           text-brandDark leading-none">
+                <h1 class="text-lg sm:text-2xl font-extrabold
+                           text-brandDark leading-tight">
 
                     Trust<span class="text-brandGreen">Sign</span>
 
                 </h1>
 
-                <p class="text-[9px] sm:text-xs font-semibold
-                          text-slate-500 tracking-wider">
+                <p class="text-[9px] sm:text-xs font-bold
+                          text-slate-500 tracking-wide">
 
-                    INDIA — DOCUMENT SUVIDHA KENDRA
+                    DIGITAL SUVIDHA KENDRA
 
                 </p>
 
@@ -152,30 +154,30 @@
         </a>
 
 
-        <!-- DESKTOP NAV -->
+        <!-- DESKTOP MENU -->
 
         <nav class="hidden md:flex items-center gap-6
-                    font-semibold text-sm">
+                    text-sm font-semibold">
 
-            <a href="#home" class="hover:text-brandGreen">
+            <a href="#home" class="hover:text-green-600">
                 Home
             </a>
 
-            <a href="#services" class="hover:text-brandGreen">
+            <a href="#services" class="hover:text-green-600">
                 Services
             </a>
 
-            <a href="#about" class="hover:text-brandGreen">
+            <a href="#about" class="hover:text-green-600">
                 About
             </a>
 
-            <a href="#faq" class="hover:text-brandGreen">
+            <a href="#faq" class="hover:text-green-600">
                 FAQ
             </a>
 
             <a href="#contact"
-               class="bg-brandGreen text-white px-5 py-2 rounded-lg
-                      hover:bg-green-700">
+               class="bg-green-600 text-white px-5 py-2.5
+                      rounded-lg hover:bg-green-700">
 
                 Contact Us
 
@@ -196,10 +198,10 @@
     </div>
 
 
-    <!-- MOBILE NAV -->
+    <!-- MOBILE MENU -->
 
     <div id="mobileMenu"
-         class="hidden md:hidden bg-white border-t">
+         class="hidden md:hidden border-t bg-white">
 
         <div class="flex flex-col p-4 gap-4 font-semibold">
 
@@ -221,8 +223,8 @@
 
             <a href="#contact"
                onclick="toggleMenu()"
-               class="bg-brandGreen text-white text-center
-                      px-4 py-2 rounded-lg">
+               class="bg-green-600 text-white text-center
+                      py-2 rounded-lg">
 
                 Contact Us
 
@@ -235,76 +237,90 @@
 </header>
 
 
-<!-- =========================================================
+<!-- =====================================================
      HERO
-========================================================= -->
+===================================================== -->
 
-<section id="home"
-         class="hero-bg text-white py-20 px-4">
+<section id="home" class="hero text-white py-20 px-4">
 
     <div class="max-w-7xl mx-auto text-center">
 
-        <span class="inline-block glass border border-green-400/30
-                     text-green-300 px-5 py-2 rounded-full
-                     text-xs sm:text-sm font-semibold mb-6">
+        <div class="inline-block border border-green-400/40
+                    bg-green-400/10 text-green-300
+                    px-5 py-2 rounded-full text-xs sm:text-sm
+                    font-semibold mb-6">
 
             <i class="fa-solid fa-location-dot mr-1"></i>
 
             Kishanganj, Bihar - 855107
 
-        </span>
+        </div>
 
 
         <h1 class="text-4xl sm:text-5xl lg:text-6xl
                    font-extrabold leading-tight">
 
-            Your Trusted Partner for
-
+            TrustSign Digital
             <span class="text-green-400">
-                Digital & Government Services
+                Suvidha Kendra
             </span>
 
         </h1>
 
 
-        <p class="max-w-3xl mx-auto mt-6 text-slate-300
-                  text-sm sm:text-lg">
+        <h2 class="text-lg sm:text-2xl font-semibold
+                   text-white mt-5">
 
-            Digital Signature Certificate, PAN Card, GST, EPF,
-            Contractor Licence, RTPS and complete online
-            document assistance under one roof.
+            Digital Signature • PAN • GST • Government &
+            Online Services
+
+        </h2>
+
+
+        <p class="max-w-3xl mx-auto mt-6 text-slate-300
+                  text-sm sm:text-lg leading-7">
+
+            Your trusted local partner for Digital Signature
+            Certificates, PAN Card, GST, EPF, RTPS,
+            Contractor Registration, Passport Assistance
+            and various online government services.
 
         </p>
 
 
         <div class="flex flex-wrap justify-center gap-4 mt-8">
 
+
             <a href="#services"
-               class="bg-brandGreen hover:bg-green-700
+               class="bg-green-600 hover:bg-green-700
                       px-7 py-3 rounded-xl font-bold shadow-lg">
 
                 <i class="fa-solid fa-list-check mr-2"></i>
+
                 Explore Services
 
             </a>
 
 
-            <a href="https://wa.me/918709638639?text=Hello%20TrustSign%20India,%20I%20need%20information%20about%20your%20services."
+            <a href="https://wa.me/918709638639?text=Hello%20TrustSign%20Digital%20Suvidha%20Kendra,%20I%20need%20information%20about%20your%20services."
                target="_blank"
                class="bg-green-500 hover:bg-green-600
                       px-7 py-3 rounded-xl font-bold">
 
                 <i class="fa-brands fa-whatsapp mr-2"></i>
+
                 WhatsApp Us
 
             </a>
 
 
             <a href="tel:+918709638639"
-               class="bg-white/10 border border-white/20
-                      hover:bg-white/20 px-7 py-3 rounded-xl font-bold">
+               class="bg-white/10 border border-white/30
+                      hover:bg-white/20 px-7 py-3
+                      rounded-xl font-bold">
 
                 <i class="fa-solid fa-phone mr-2"></i>
+
                 Call Now
 
             </a>
@@ -316,16 +332,17 @@
 </section>
 
 
-<!-- =========================================================
-     TRUST STRIP
-========================================================= -->
+<!-- =====================================================
+     TRUST FEATURES
+===================================================== -->
 
 <section class="bg-white border-b py-7 px-4">
 
     <div class="max-w-7xl mx-auto
                 grid grid-cols-2 md:grid-cols-4 gap-4">
 
-        <div class="p-4 bg-slate-50 rounded-xl border text-center">
+
+        <div class="bg-slate-50 border rounded-xl p-5 text-center">
 
             <i class="fa-solid fa-bolt text-green-600 text-3xl"></i>
 
@@ -333,14 +350,14 @@
                 Fast Service
             </h3>
 
-            <p class="text-xs text-slate-500">
-                Quick processing
+            <p class="text-xs text-slate-500 mt-1">
+                Quick assistance
             </p>
 
         </div>
 
 
-        <div class="p-4 bg-slate-50 rounded-xl border text-center">
+        <div class="bg-slate-50 border rounded-xl p-5 text-center">
 
             <i class="fa-solid fa-shield-halved text-green-600 text-3xl"></i>
 
@@ -348,14 +365,14 @@
                 Secure Process
             </h3>
 
-            <p class="text-xs text-slate-500">
-                Safe document handling
+            <p class="text-xs text-slate-500 mt-1">
+                Safe documentation
             </p>
 
         </div>
 
 
-        <div class="p-4 bg-slate-50 rounded-xl border text-center">
+        <div class="bg-slate-50 border rounded-xl p-5 text-center">
 
             <i class="fa-solid fa-user-tie text-green-600 text-3xl"></i>
 
@@ -363,14 +380,14 @@
                 Expert Assistance
             </h3>
 
-            <p class="text-xs text-slate-500">
+            <p class="text-xs text-slate-500 mt-1">
                 Professional guidance
             </p>
 
         </div>
 
 
-        <div class="p-4 bg-slate-50 rounded-xl border text-center">
+        <div class="bg-slate-50 border rounded-xl p-5 text-center">
 
             <i class="fa-solid fa-headset text-green-600 text-3xl"></i>
 
@@ -378,8 +395,8 @@
                 Customer Support
             </h3>
 
-            <p class="text-xs text-slate-500">
-                Help when you need it
+            <p class="text-xs text-slate-500 mt-1">
+                Support when needed
             </p>
 
         </div>
@@ -389,13 +406,14 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      SERVICES
-========================================================= -->
+===================================================== -->
 
 <section id="services" class="py-20 px-4">
 
     <div class="max-w-7xl mx-auto">
+
 
         <div class="text-center mb-12">
 
@@ -403,18 +421,18 @@
                 Our Services
             </span>
 
-            <h2 class="text-3xl sm:text-4xl font-extrabold
-                       text-brandDark mt-2">
+            <h2 class="text-3xl sm:text-4xl
+                       font-extrabold text-brandDark mt-2">
 
-                Complete Document Suvidha Services
+                Digital & Government Services
 
             </h2>
 
             <p class="text-slate-500 mt-3 max-w-2xl mx-auto">
 
-                Professional assistance for digital signatures,
-                government registrations, certificates and
-                online documentation.
+                Complete assistance for digital signatures,
+                government documentation, registrations and
+                online services.
 
             </p>
 
@@ -425,13 +443,13 @@
                     lg:grid-cols-3 gap-6">
 
 
-            <!-- DSC -->
+            <!-- 1 -->
 
-            <div class="service-card bg-white p-6 rounded-2xl
-                        shadow-sm border">
+            <div class="service-card bg-white border
+                        rounded-2xl p-6">
 
-                <div class="w-14 h-14 bg-purple-50
-                            text-purple-600 rounded-xl
+                <div class="w-14 h-14 rounded-xl
+                            bg-purple-50 text-purple-600
                             flex items-center justify-center
                             text-2xl mb-5">
 
@@ -439,26 +457,26 @@
 
                 </div>
 
-                <h3 class="font-bold text-xl text-brandDark">
+                <h3 class="text-xl font-bold text-brandDark">
                     DSC Digital Signature
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
                     Digital Signature Certificates for GST,
-                    Income Tax, MCA, tenders and other online
-                    government portals.
+                    Income Tax, MCA, tenders and other
+                    eligible online portals.
                 </p>
 
             </div>
 
 
-            <!-- PAN -->
+            <!-- 2 -->
 
-            <div class="service-card bg-white p-6 rounded-2xl
-                        shadow-sm border">
+            <div class="service-card bg-white border
+                        rounded-2xl p-6">
 
-                <div class="w-14 h-14 bg-green-50
-                            text-green-600 rounded-xl
+                <div class="w-14 h-14 rounded-xl
+                            bg-green-50 text-green-600
                             flex items-center justify-center
                             text-2xl mb-5">
 
@@ -466,26 +484,26 @@
 
                 </div>
 
-                <h3 class="font-bold text-xl text-brandDark">
+                <h3 class="text-xl font-bold text-brandDark">
                     PAN Card Apply & Correction
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
                     New PAN applications, correction,
-                    name change, date of birth and other
+                    name, date of birth and other
                     PAN-related services.
                 </p>
 
             </div>
 
 
-            <!-- GST -->
+            <!-- 3 -->
 
-            <div class="service-card bg-white p-6 rounded-2xl
-                        shadow-sm border">
+            <div class="service-card bg-white border
+                        rounded-2xl p-6">
 
-                <div class="w-14 h-14 bg-blue-50
-                            text-blue-600 rounded-xl
+                <div class="w-14 h-14 rounded-xl
+                            bg-blue-50 text-blue-600
                             flex items-center justify-center
                             text-2xl mb-5">
 
@@ -493,25 +511,25 @@
 
                 </div>
 
-                <h3 class="font-bold text-xl text-brandDark">
+                <h3 class="text-xl font-bold text-brandDark">
                     GST Registration & Filing
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
-                    GST registration, amendment, return filing
-                    and related online compliance assistance.
+                    GST registration, amendment, return
+                    filing and related online assistance.
                 </p>
 
             </div>
 
 
-            <!-- EPF -->
+            <!-- 4 -->
 
-            <div class="service-card bg-white p-6 rounded-2xl
-                        shadow-sm border">
+            <div class="service-card bg-white border
+                        rounded-2xl p-6">
 
-                <div class="w-14 h-14 bg-cyan-50
-                            text-cyan-600 rounded-xl
+                <div class="w-14 h-14 rounded-xl
+                            bg-cyan-50 text-cyan-600
                             flex items-center justify-center
                             text-2xl mb-5">
 
@@ -519,25 +537,25 @@
 
                 </div>
 
-                <h3 class="font-bold text-xl text-brandDark">
-                    EPF Registration
+                <h3 class="text-xl font-bold text-brandDark">
+                    EPF Registration & Services
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
-                    EPF registration, employer-related online
-                    services and documentation assistance.
+                    EPF registration and eligible online
+                    documentation assistance.
                 </p>
 
             </div>
 
 
-            <!-- Contractor -->
+            <!-- 5 -->
 
-            <div class="service-card bg-white p-6 rounded-2xl
-                        shadow-sm border">
+            <div class="service-card bg-white border
+                        rounded-2xl p-6">
 
-                <div class="w-14 h-14 bg-orange-50
-                            text-orange-600 rounded-xl
+                <div class="w-14 h-14 rounded-xl
+                            bg-orange-50 text-orange-600
                             flex items-center justify-center
                             text-2xl mb-5">
 
@@ -545,25 +563,25 @@
 
                 </div>
 
-                <h3 class="font-bold text-xl text-brandDark">
-                    Contractor Registration
+                <h3 class="text-xl font-bold text-brandDark">
+                    Government Contractor Licence
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
-                    Government contractor registration,
-                    licence and related documentation assistance.
+                    Contractor registration, licence and
+                    related documentation assistance.
                 </p>
 
             </div>
 
 
-            <!-- RTPS -->
+            <!-- 6 -->
 
-            <div class="service-card bg-white p-6 rounded-2xl
-                        shadow-sm border">
+            <div class="service-card bg-white border
+                        rounded-2xl p-6">
 
-                <div class="w-14 h-14 bg-red-50
-                            text-red-600 rounded-xl
+                <div class="w-14 h-14 rounded-xl
+                            bg-red-50 text-red-600
                             flex items-center justify-center
                             text-2xl mb-5">
 
@@ -571,26 +589,25 @@
 
                 </div>
 
-                <h3 class="font-bold text-xl text-brandDark">
+                <h3 class="text-xl font-bold text-brandDark">
                     RTPS Online Services
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
-                    Online assistance for caste, income,
-                    residence and other eligible certificate
-                    applications.
+                    Assistance for eligible caste, income,
+                    residence and other online certificates.
                 </p>
 
             </div>
 
 
-            <!-- Passport -->
+            <!-- 7 -->
 
-            <div class="service-card bg-white p-6 rounded-2xl
-                        shadow-sm border">
+            <div class="service-card bg-white border
+                        rounded-2xl p-6">
 
-                <div class="w-14 h-14 bg-indigo-50
-                            text-indigo-600 rounded-xl
+                <div class="w-14 h-14 rounded-xl
+                            bg-indigo-50 text-indigo-600
                             flex items-center justify-center
                             text-2xl mb-5">
 
@@ -598,25 +615,26 @@
 
                 </div>
 
-                <h3 class="font-bold text-xl text-brandDark">
+                <h3 class="text-xl font-bold text-brandDark">
                     Passport Assistance
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
-                    Assistance with online passport application,
-                    appointment and documentation process.
+                    Assistance with online passport
+                    applications, appointments and
+                    documentation.
                 </p>
 
             </div>
 
 
-            <!-- MCA -->
+            <!-- 8 -->
 
-            <div class="service-card bg-white p-6 rounded-2xl
-                        shadow-sm border">
+            <div class="service-card bg-white border
+                        rounded-2xl p-6">
 
-                <div class="w-14 h-14 bg-pink-50
-                            text-pink-600 rounded-xl
+                <div class="w-14 h-14 rounded-xl
+                            bg-pink-50 text-pink-600
                             flex items-center justify-center
                             text-2xl mb-5">
 
@@ -624,25 +642,25 @@
 
                 </div>
 
-                <h3 class="font-bold text-xl text-brandDark">
+                <h3 class="text-xl font-bold text-brandDark">
                     MCA & Company Services
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
-                    Online assistance for company and LLP
-                    related government documentation.
+                    Assistance with company and LLP
+                    related online documentation.
                 </p>
 
             </div>
 
 
-            <!-- DGFT -->
+            <!-- 9 -->
 
-            <div class="service-card bg-white p-6 rounded-2xl
-                        shadow-sm border">
+            <div class="service-card bg-white border
+                        rounded-2xl p-6">
 
-                <div class="w-14 h-14 bg-yellow-50
-                            text-yellow-600 rounded-xl
+                <div class="w-14 h-14 rounded-xl
+                            bg-yellow-50 text-yellow-600
                             flex items-center justify-center
                             text-2xl mb-5">
 
@@ -650,25 +668,25 @@
 
                 </div>
 
-                <h3 class="font-bold text-xl text-brandDark">
+                <h3 class="text-xl font-bold text-brandDark">
                     DGFT & ICEGATE
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
-                    Online documentation and assistance for
-                    eligible import-export related services.
+                    Assistance for eligible import-export
+                    related online services.
                 </p>
 
             </div>
 
 
-            <!-- GST / Business -->
+            <!-- 10 -->
 
-            <div class="service-card bg-white p-6 rounded-2xl
-                        shadow-sm border">
+            <div class="service-card bg-white border
+                        rounded-2xl p-6">
 
-                <div class="w-14 h-14 bg-teal-50
-                            text-teal-600 rounded-xl
+                <div class="w-14 h-14 rounded-xl
+                            bg-teal-50 text-teal-600
                             flex items-center justify-center
                             text-2xl mb-5">
 
@@ -676,25 +694,25 @@
 
                 </div>
 
-                <h3 class="font-bold text-xl text-brandDark">
+                <h3 class="text-xl font-bold text-brandDark">
                     Business Registration
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
-                    Assistance with business registrations,
-                    licences and online government applications.
+                    Assistance with eligible business
+                    registrations and licences.
                 </p>
 
             </div>
 
 
-            <!-- Online Documents -->
+            <!-- 11 -->
 
-            <div class="service-card bg-white p-6 rounded-2xl
-                        shadow-sm border">
+            <div class="service-card bg-white border
+                        rounded-2xl p-6">
 
-                <div class="w-14 h-14 bg-slate-100
-                            text-slate-700 rounded-xl
+                <div class="w-14 h-14 rounded-xl
+                            bg-slate-100 text-slate-700
                             flex items-center justify-center
                             text-2xl mb-5">
 
@@ -702,13 +720,39 @@
 
                 </div>
 
-                <h3 class="font-bold text-xl text-brandDark">
+                <h3 class="text-xl font-bold text-brandDark">
                     Online Document Services
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
-                    General online documentation and
-                    government portal assistance.
+                    Online documentation and government
+                    portal assistance.
+                </p>
+
+            </div>
+
+
+            <!-- 12 -->
+
+            <div class="service-card bg-white border
+                        rounded-2xl p-6">
+
+                <div class="w-14 h-14 rounded-xl
+                            bg-emerald-50 text-emerald-600
+                            flex items-center justify-center
+                            text-2xl mb-5">
+
+                    <i class="fa-solid fa-file-circle-check"></i>
+
+                </div>
+
+                <h3 class="text-xl font-bold text-brandDark">
+                    Other Online Services
+                </h3>
+
+                <p class="text-sm text-slate-500 mt-2">
+                    Contact us for information about
+                    additional online services.
                 </p>
 
             </div>
@@ -720,72 +764,77 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      ABOUT
-========================================================= -->
+===================================================== -->
 
-<section id="about"
-         class="py-20 px-4 bg-slate-100">
+<section id="about" class="py-20 px-4 bg-slate-100">
 
     <div class="max-w-7xl mx-auto
-                grid grid-cols-1 lg:grid-cols-2 gap-12
-                items-center">
+                grid lg:grid-cols-2 gap-12 items-center">
+
 
         <div>
 
             <span class="text-green-600 font-bold uppercase text-sm">
-                About TrustSign India
+                About Us
             </span>
 
             <h2 class="text-3xl sm:text-4xl
                        font-extrabold text-brandDark mt-2">
 
-                Your Local Digital Service Partner
+                Your Trusted Digital Service Partner
 
             </h2>
 
             <p class="text-slate-600 mt-5 leading-7">
 
-                TrustSign India is a Document Suvidha Kendra
-                serving customers in Kishanganj and surrounding
-                areas with assistance for digital signatures,
-                government registrations and online documentation.
+                <strong>TrustSign Digital Suvidha Kendra</strong>
+                provides assistance for Digital Signature,
+                PAN, GST, EPF, government registrations,
+                certificates and various online services.
 
             </p>
 
             <p class="text-slate-600 mt-4 leading-7">
 
-                Our aim is to make online government and
-                business-related services easier and more
-                convenient for customers.
+                Our goal is to make digital and government
+                related online services easier and more
+                convenient for customers in Kishanganj
+                and nearby areas.
 
             </p>
 
 
-            <div class="grid grid-cols-2 gap-4 mt-7">
+            <div class="mt-7 space-y-3">
 
-                <div class="bg-white p-5 rounded-xl border">
+                <p>
+                    <i class="fa-solid fa-circle-check
+                              text-green-600 mr-2"></i>
 
-                    <i class="fa-solid fa-check-circle
-                              text-green-600 text-2xl"></i>
+                    Digital Signature Services
+                </p>
 
-                    <h4 class="font-bold mt-2">
-                        Professional Assistance
-                    </h4>
+                <p>
+                    <i class="fa-solid fa-circle-check
+                              text-green-600 mr-2"></i>
 
-                </div>
+                    PAN & GST Services
+                </p>
 
+                <p>
+                    <i class="fa-solid fa-circle-check
+                              text-green-600 mr-2"></i>
 
-                <div class="bg-white p-5 rounded-xl border">
+                    Government Online Services
+                </p>
 
-                    <i class="fa-solid fa-shield-halved
-                              text-green-600 text-2xl"></i>
+                <p>
+                    <i class="fa-solid fa-circle-check
+                              text-green-600 mr-2"></i>
 
-                    <h4 class="font-bold mt-2">
-                        Secure Process
-                    </h4>
-
-                </div>
+                    Professional Documentation Assistance
+                </p>
 
             </div>
 
@@ -798,35 +847,40 @@
             <div class="text-center">
 
                 <div class="w-20 h-20 mx-auto rounded-full
-                            bg-green-500/20 flex items-center
-                            justify-center text-green-400 text-4xl">
+                            bg-green-500/20 text-green-400
+                            flex items-center justify-center
+                            text-4xl">
 
                     <i class="fa-solid fa-handshake"></i>
 
                 </div>
 
                 <h3 class="text-2xl font-bold mt-5">
-                    Why Choose Us?
+                    Why Choose TrustSign?
                 </h3>
 
             </div>
 
 
-            <div class="space-y-5 mt-8">
+            <div class="space-y-6 mt-8">
+
 
                 <div class="flex gap-4">
 
-                    <i class="fa-solid fa-circle-check
+                    <i class="fa-solid fa-check
                               text-green-400 mt-1"></i>
 
                     <div>
+
                         <h4 class="font-bold">
-                            Convenient Local Assistance
+                            One Place, Multiple Services
                         </h4>
-                        <p class="text-slate-300 text-sm">
-                            Get assistance without unnecessary
-                            online confusion.
+
+                        <p class="text-slate-300 text-sm mt-1">
+                            Multiple digital and government
+                            services under one roof.
                         </p>
+
                     </div>
 
                 </div>
@@ -834,17 +888,20 @@
 
                 <div class="flex gap-4">
 
-                    <i class="fa-solid fa-circle-check
+                    <i class="fa-solid fa-check
                               text-green-400 mt-1"></i>
 
                     <div>
+
                         <h4 class="font-bold">
-                            Multiple Services
+                            Local Assistance
                         </h4>
-                        <p class="text-slate-300 text-sm">
-                            Digital, government and business
-                            services at one place.
+
+                        <p class="text-slate-300 text-sm mt-1">
+                            Convenient service assistance
+                            in Kishanganj.
                         </p>
+
                     </div>
 
                 </div>
@@ -852,17 +909,20 @@
 
                 <div class="flex gap-4">
 
-                    <i class="fa-solid fa-circle-check
+                    <i class="fa-solid fa-check
                               text-green-400 mt-1"></i>
 
                     <div>
+
                         <h4 class="font-bold">
                             Customer Support
                         </h4>
-                        <p class="text-slate-300 text-sm">
-                            Assistance throughout the application
-                            process.
+
+                        <p class="text-slate-300 text-sm mt-1">
+                            Assistance throughout the
+                            online application process.
                         </p>
+
                     </div>
 
                 </div>
@@ -876,32 +936,34 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      HOW IT WORKS
-========================================================= -->
+===================================================== -->
 
 <section class="py-20 px-4 bg-white">
 
     <div class="max-w-6xl mx-auto text-center">
 
-        <h2 class="text-3xl sm:text-4xl font-extrabold
-                   text-brandDark">
+        <h2 class="text-3xl sm:text-4xl
+                   font-extrabold text-brandDark">
 
-            How Our Service Works
+            How It Works
 
         </h2>
 
         <p class="text-slate-500 mt-3">
-            Simple and convenient process
+            Simple steps to get assistance
         </p>
 
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-4
+                    gap-6 mt-12">
 
-            <div class="p-6">
 
-                <div class="w-16 h-16 mx-auto bg-green-100
-                            text-green-600 rounded-full
+            <div>
+
+                <div class="w-16 h-16 mx-auto rounded-full
+                            bg-green-100 text-green-600
                             flex items-center justify-center
                             text-2xl font-bold">
 
@@ -920,10 +982,10 @@
             </div>
 
 
-            <div class="p-6">
+            <div>
 
-                <div class="w-16 h-16 mx-auto bg-blue-100
-                            text-blue-600 rounded-full
+                <div class="w-16 h-16 mx-auto rounded-full
+                            bg-blue-100 text-blue-600
                             flex items-center justify-center
                             text-2xl font-bold">
 
@@ -932,20 +994,20 @@
                 </div>
 
                 <h3 class="font-bold mt-4">
-                    Select Service
+                    Choose Service
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
-                    Tell us which service you need.
+                    Tell us your requirement.
                 </p>
 
             </div>
 
 
-            <div class="p-6">
+            <div>
 
-                <div class="w-16 h-16 mx-auto bg-purple-100
-                            text-purple-600 rounded-full
+                <div class="w-16 h-16 mx-auto rounded-full
+                            bg-purple-100 text-purple-600
                             flex items-center justify-center
                             text-2xl font-bold">
 
@@ -958,16 +1020,16 @@
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
-                    Provide the required documents.
+                    Provide required documents.
                 </p>
 
             </div>
 
 
-            <div class="p-6">
+            <div>
 
-                <div class="w-16 h-16 mx-auto bg-orange-100
-                            text-orange-600 rounded-full
+                <div class="w-16 h-16 mx-auto rounded-full
+                            bg-orange-100 text-orange-600
                             flex items-center justify-center
                             text-2xl font-bold">
 
@@ -980,7 +1042,7 @@
                 </h3>
 
                 <p class="text-sm text-slate-500 mt-2">
-                    We help with the online process.
+                    We assist with the online process.
                 </p>
 
             </div>
@@ -992,30 +1054,37 @@
 </section>
 
 
-<!-- =========================================================
-     GOOGLE MAP
-========================================================= -->
+<!-- =====================================================
+     LOCATION
+===================================================== -->
 
 <section class="py-20 px-4 bg-slate-100">
 
     <div class="max-w-7xl mx-auto">
 
+
         <div class="text-center mb-10">
 
-            <h2 class="text-3xl font-extrabold text-brandDark">
-                Find Us in Kishanganj
+            <h2 class="text-3xl sm:text-4xl
+                       font-extrabold text-brandDark">
+
+                Visit Our Suvidha Kendra
+
             </h2>
 
-            <p class="text-slate-500 mt-2">
-                Ward No. 15, Line Masjid Road, Chaprasi Muhalla,
-                Kishanganj, Bihar - 855107
+            <p class="text-slate-500 mt-3">
+
+                Ward No. 15, Line Masjid Road,
+                Chaprasi Muhalla, Kishanganj,
+                Bihar - 855107
+
             </p>
 
         </div>
 
 
-        <div class="rounded-2xl overflow-hidden shadow-lg
-                    border bg-white">
+        <div class="rounded-2xl overflow-hidden
+                    shadow-lg border bg-white">
 
             <iframe
                 src="https://www.google.com/maps?q=Line%20Masjid%20Road%20Kishanganj%20Bihar%20855107&output=embed"
@@ -1033,18 +1102,23 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      FAQ
-========================================================= -->
+===================================================== -->
 
 <section id="faq" class="py-20 px-4 bg-white">
 
     <div class="max-w-4xl mx-auto">
 
+
         <div class="text-center mb-10">
 
+            <span class="text-green-600 font-bold uppercase text-sm">
+                FAQ
+            </span>
+
             <h2 class="text-3xl sm:text-4xl
-                       font-extrabold text-brandDark">
+                       font-extrabold text-brandDark mt-2">
 
                 Frequently Asked Questions
 
@@ -1059,14 +1133,13 @@
             <details class="bg-slate-50 border rounded-xl p-5">
 
                 <summary class="font-bold cursor-pointer">
-                    What services does TrustSign India provide?
+                    What services are available?
                 </summary>
 
                 <p class="text-sm text-slate-600 mt-3">
-                    We provide assistance for DSC, PAN Card,
-                    GST, EPF, contractor registration, RTPS,
-                    passport assistance and various online
-                    government services.
+                    We provide assistance for DSC, PAN, GST,
+                    EPF, contractor licence, RTPS, passport
+                    assistance and various online services.
                 </p>
 
             </details>
@@ -1075,11 +1148,11 @@
             <details class="bg-slate-50 border rounded-xl p-5">
 
                 <summary class="font-bold cursor-pointer">
-                    How can I contact TrustSign India?
+                    How can I contact TrustSign?
                 </summary>
 
                 <p class="text-sm text-slate-600 mt-3">
-                    You can call us at +91 8709638639 or contact
+                    You can call +91 8709638639 or contact
                     us through WhatsApp.
                 </p>
 
@@ -1089,7 +1162,7 @@
             <details class="bg-slate-50 border rounded-xl p-5">
 
                 <summary class="font-bold cursor-pointer">
-                    Where is TrustSign India located?
+                    Where is the centre located?
                 </summary>
 
                 <p class="text-sm text-slate-600 mt-3">
@@ -1104,12 +1177,28 @@
             <details class="bg-slate-50 border rounded-xl p-5">
 
                 <summary class="font-bold cursor-pointer">
-                    Can I enquire through WhatsApp?
+                    Can I send an enquiry on WhatsApp?
                 </summary>
 
                 <p class="text-sm text-slate-600 mt-3">
-                    Yes. Click the WhatsApp button on this website
-                    to send us your enquiry directly.
+                    Yes. You can use the WhatsApp button
+                    available on the website.
+                </p>
+
+            </details>
+
+
+            <details class="bg-slate-50 border rounded-xl p-5">
+
+                <summary class="font-bold cursor-pointer">
+                    Is every government service available?
+                </summary>
+
+                <p class="text-sm text-slate-600 mt-3">
+                    Service availability depends on the
+                    applicable government portal, eligibility
+                    and current rules. Please contact us
+                    before submitting documents.
                 </p>
 
             </details>
@@ -1121,9 +1210,9 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      CONTACT
-========================================================= -->
+===================================================== -->
 
 <section id="contact" class="py-20 px-4">
 
@@ -1131,9 +1220,10 @@
                 grid grid-cols-1 md:grid-cols-2 gap-8">
 
 
-        <!-- CONTACT DETAILS -->
+        <!-- DETAILS -->
 
-        <div class="bg-brandDark text-white rounded-2xl p-8">
+        <div class="bg-brandDark text-white
+                    rounded-2xl p-8 sm:p-10">
 
             <span class="text-green-400 font-bold uppercase text-sm">
                 Contact Us
@@ -1144,16 +1234,16 @@
             </h2>
 
             <p class="text-slate-300 mt-4">
-                Contact us for information and assistance
-                regarding our online services.
+                Contact TrustSign Digital Suvidha Kendra
+                for information about our services.
             </p>
 
 
-            <div class="space-y-5 mt-8">
+            <div class="space-y-6 mt-8">
 
 
                 <a href="tel:+918709638639"
-                   class="flex gap-4 items-start">
+                   class="flex gap-4">
 
                     <i class="fa-solid fa-phone text-green-400
                               text-xl mt-1"></i>
@@ -1174,7 +1264,7 @@
 
 
                 <a href="mailto:trustsignindia@gmail.com"
-                   class="flex gap-4 items-start">
+                   class="flex gap-4">
 
                     <i class="fa-solid fa-envelope text-green-400
                               text-xl mt-1"></i>
@@ -1194,10 +1284,10 @@
                 </a>
 
 
-                <div class="flex gap-4 items-start">
+                <div class="flex gap-4">
 
-                    <i class="fa-solid fa-location-dot text-green-400
-                              text-xl mt-1"></i>
+                    <i class="fa-solid fa-location-dot
+                              text-green-400 text-xl mt-1"></i>
 
                     <div>
 
@@ -1205,7 +1295,7 @@
                             ADDRESS
                         </p>
 
-                        <p class="font-semibold">
+                        <p class="font-semibold leading-6">
                             Ward No. 15, Line Masjid Road,
                             Chaprasi Muhalla,
                             Kishanganj, Bihar - 855107
@@ -1218,13 +1308,15 @@
             </div>
 
 
-            <div class="mt-8 pt-6 border-t border-slate-700">
+            <div class="mt-8 pt-6
+                        border-t border-slate-700">
 
                 <p class="text-xs text-slate-400">
                     Powered By
                 </p>
 
-                <p class="font-extrabold text-green-400 text-lg">
+                <p class="text-green-400
+                          font-extrabold text-lg">
                     4 STAR MOBILE ★
                 </p>
 
@@ -1233,22 +1325,23 @@
         </div>
 
 
-        <!-- ENQUIRY FORM -->
+        <!-- FORM -->
 
-        <div class="bg-white rounded-2xl p-8
-                    shadow-lg border">
+        <div class="bg-white rounded-2xl
+                    p-8 shadow-lg border">
 
             <h3 class="text-2xl font-bold text-brandDark">
-                Send an Inquiry
+                Send an Enquiry
             </h3>
 
             <p class="text-sm text-slate-500 mt-2">
-                Fill the form and send your enquiry directly
-                to us on WhatsApp.
+                Your enquiry will open directly in WhatsApp.
             </p>
 
 
-            <form id="inquiryForm" class="space-y-5 mt-7">
+            <form id="inquiryForm"
+                  class="space-y-5 mt-7">
+
 
                 <div>
 
@@ -1259,9 +1352,9 @@
                     <input id="name"
                            type="text"
                            required
-                           class="w-full px-4 py-3 border rounded-xl
-                                  focus:outline-none focus:ring-2
-                                  focus:ring-green-500"
+                           class="w-full px-4 py-3 border
+                                  rounded-xl focus:outline-none
+                                  focus:ring-2 focus:ring-green-500"
                            placeholder="Enter your name">
 
                 </div>
@@ -1276,9 +1369,9 @@
                     <input id="phone"
                            type="tel"
                            required
-                           class="w-full px-4 py-3 border rounded-xl
-                                  focus:outline-none focus:ring-2
-                                  focus:ring-green-500"
+                           class="w-full px-4 py-3 border
+                                  rounded-xl focus:outline-none
+                                  focus:ring-2 focus:ring-green-500"
                            placeholder="Enter phone number">
 
                 </div>
@@ -1291,18 +1384,46 @@
                     </label>
 
                     <select id="service"
-                            class="w-full px-4 py-3 border rounded-xl">
+                            class="w-full px-4 py-3 border
+                                   rounded-xl">
 
                         <option>DSC Digital Signature</option>
-                        <option>PAN Card Apply & Correction</option>
-                        <option>GST Registration</option>
-                        <option>EPF Registration</option>
-                        <option>Government Contractor Licence</option>
-                        <option>RTPS Online Services</option>
-                        <option>Passport Assistance</option>
-                        <option>MCA Services</option>
-                        <option>DGFT / ICEGATE</option>
-                        <option>Other Online Service</option>
+
+                        <option>
+                            PAN Card Apply & Correction
+                        </option>
+
+                        <option>
+                            GST Registration & Filing
+                        </option>
+
+                        <option>
+                            EPF Registration
+                        </option>
+
+                        <option>
+                            Government Contractor Licence
+                        </option>
+
+                        <option>
+                            RTPS Online Services
+                        </option>
+
+                        <option>
+                            Passport Assistance
+                        </option>
+
+                        <option>
+                            MCA & Company Services
+                        </option>
+
+                        <option>
+                            DGFT & ICEGATE
+                        </option>
+
+                        <option>
+                            Other Online Service
+                        </option>
 
                     </select>
 
@@ -1317,18 +1438,22 @@
 
                     <textarea id="message"
                               rows="4"
-                              class="w-full px-4 py-3 border rounded-xl"
-                              placeholder="Write your requirement"></textarea>
+                              class="w-full px-4 py-3
+                                     border rounded-xl"
+                              placeholder="Write your requirement">
+                    </textarea>
 
                 </div>
 
 
                 <button type="submit"
                         class="w-full bg-green-600
-                               hover:bg-green-700 text-white
-                               font-bold py-3 rounded-xl">
+                               hover:bg-green-700
+                               text-white font-bold
+                               py-3 rounded-xl">
 
                     <i class="fa-brands fa-whatsapp mr-2"></i>
+
                     Send Enquiry on WhatsApp
 
                 </button>
@@ -1342,16 +1467,18 @@
 </section>
 
 
-<!-- =========================================================
+<!-- =====================================================
      FOOTER
-========================================================= -->
+===================================================== -->
 
-<footer class="bg-brandDark text-slate-400 py-10 px-4">
+<footer class="bg-brandDark text-slate-400
+               py-10 px-4">
 
     <div class="max-w-7xl mx-auto">
 
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1
+                    md:grid-cols-3 gap-8">
 
 
             <div>
@@ -1360,9 +1487,10 @@
                     Trust<span class="text-green-400">Sign</span>
                 </h3>
 
-                <p class="text-sm mt-3">
-                    Digital Signature & Government Online
-                    Services in Kishanganj, Bihar.
+                <p class="text-sm mt-3 leading-6">
+                    TrustSign Digital Suvidha Kendra —
+                    Digital Signature, PAN, GST,
+                    Government & Online Services.
                 </p>
 
             </div>
@@ -1388,6 +1516,10 @@
                         About Us
                     </a>
 
+                    <a href="#faq" class="hover:text-green-400">
+                        FAQ
+                    </a>
+
                     <a href="#contact" class="hover:text-green-400">
                         Contact
                     </a>
@@ -1404,13 +1536,24 @@
                 </h4>
 
                 <p class="text-sm">
-                    <i class="fa-solid fa-phone mr-2 text-green-400"></i>
+                    <i class="fa-solid fa-phone
+                              mr-2 text-green-400"></i>
+
                     +91 8709638639
                 </p>
 
                 <p class="text-sm mt-2">
-                    <i class="fa-solid fa-envelope mr-2 text-green-400"></i>
+                    <i class="fa-solid fa-envelope
+                              mr-2 text-green-400"></i>
+
                     trustsignindia@gmail.com
+                </p>
+
+                <p class="text-sm mt-2">
+                    <i class="fa-solid fa-location-dot
+                              mr-2 text-green-400"></i>
+
+                    Kishanganj, Bihar - 855107
                 </p>
 
             </div>
@@ -1418,12 +1561,13 @@
         </div>
 
 
-        <div class="border-t border-slate-700 mt-8 pt-6
-                    text-center text-xs">
+        <div class="border-t border-slate-700
+                    mt-8 pt-6 text-center text-xs">
 
-            © 2026 TrustSign India. All Rights Reserved.
+            © 2026 TrustSign Digital Suvidha Kendra.
+            All Rights Reserved.
 
-            <br>
+            <br><br>
 
             Powered By
             <span class="text-green-400 font-bold">
@@ -1437,36 +1581,44 @@
 </footer>
 
 
-<!-- =========================================================
-     FLOATING BUTTONS
-========================================================= -->
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
 
-<a href="https://wa.me/918709638639?text=Hello%20TrustSign%20India,%20I%20need%20information%20about%20your%20services."
+<a href="https://wa.me/918709638639?text=Hello%20TrustSign%20Digital%20Suvidha%20Kendra,%20I%20need%20information%20about%20your%20services."
    target="_blank"
-   class="whatsapp bg-green-500 hover:bg-green-600
-          text-white w-14 h-14 rounded-full
-          flex items-center justify-center
-          text-3xl shadow-xl">
+   aria-label="WhatsApp"
+   class="floating-whatsapp
+          bg-green-500 hover:bg-green-600
+          text-white w-14 h-14
+          rounded-full flex items-center
+          justify-center text-3xl shadow-xl">
 
     <i class="fa-brands fa-whatsapp"></i>
 
 </a>
 
 
+<!-- =====================================================
+     FLOATING CALL
+===================================================== -->
+
 <a href="tel:+918709638639"
-   class="call-button bg-blue-600 hover:bg-blue-700
-          text-white w-14 h-14 rounded-full
-          flex items-center justify-center
-          text-xl shadow-xl">
+   aria-label="Call"
+   class="floating-call
+          bg-blue-600 hover:bg-blue-700
+          text-white w-14 h-14
+          rounded-full flex items-center
+          justify-center text-xl shadow-xl">
 
     <i class="fa-solid fa-phone"></i>
 
 </a>
 
 
-<!-- =========================================================
+<!-- =====================================================
      JAVASCRIPT
-========================================================= -->
+===================================================== -->
 
 <script>
 
@@ -1481,7 +1633,7 @@
     }
 
 
-    /* WhatsApp Enquiry */
+    /* WhatsApp Enquiry Form */
 
     document.getElementById("inquiryForm")
         .addEventListener("submit", function(event) {
@@ -1489,32 +1641,43 @@
             event.preventDefault();
 
             const name =
-                document.getElementById("name").value;
+                document.getElementById("name").value.trim();
 
             const phone =
-                document.getElementById("phone").value;
+                document.getElementById("phone").value.trim();
 
             const service =
                 document.getElementById("service").value;
 
             const message =
-                document.getElementById("message").value;
+                document.getElementById("message").value.trim();
 
 
-            const whatsappMessage =
-                "Hello TrustSign India,%0A%0A" +
-                "Name: " + encodeURIComponent(name) + "%0A" +
-                "Phone: " + encodeURIComponent(phone) + "%0A" +
-                "Service: " + encodeURIComponent(service) + "%0A" +
-                "Message: " + encodeURIComponent(message);
+            const text =
+                "Hello TrustSign Digital Suvidha Kendra,%0A%0A" +
+
+                "Name: " +
+                encodeURIComponent(name) +
+                "%0A" +
+
+                "Phone: " +
+                encodeURIComponent(phone) +
+                "%0A" +
+
+                "Service: " +
+                encodeURIComponent(service) +
+                "%0A" +
+
+                "Message: " +
+                encodeURIComponent(message);
 
 
-            const url =
+            const whatsappURL =
                 "https://wa.me/918709638639?text=" +
-                whatsappMessage;
+                text;
 
 
-            window.open(url, "_blank");
+            window.open(whatsappURL, "_blank");
 
         });
 
