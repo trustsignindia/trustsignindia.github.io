@@ -681,9 +681,14 @@ let existingData = JSON.parse(localStorage.getItem("ts_enquiries") || "[]");
 existingData.unshift(newEntry);
 localStorage.setItem("ts_enquiries", JSON.stringify(existingData));
 
+// Formatted WhatsApp Message
+const message = `*New Service Enquiry*%0A%0A` +
+                `*Name:* ${encodeURIComponent(name)}%0A` +
+                `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                `*Service:* ${encodeURIComponent(service)}`;
+
 // WhatsApp Redirect
-const text = "Hello TrustSign Digital Suvidha Kendra,\n\nName: " + name + "\nPhone: " + phone + "\nService: " + service;
-window.open("https://wa.me/918709638639?text=" + encodeURIComponent(text), "_blank");
+window.open(`https://wa.me/918709638639?text=${message}`, "_blank");
 
 this.reset();
 });
