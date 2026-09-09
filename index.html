@@ -869,8 +869,8 @@ document.getElementById("adminModal").classList.add("hidden");
 }
 
 function verifyAdminPassword() {
-const inputPass = document.getElementById("adminPassInput50" || "adminPassInput").value;
-if(document.getElementById("adminPassInput").value === "9473371370Rr@") {
+const inputPass = document.getElementById("adminPassInput").value;
+if(inputPass === "9473371370Rr@") {
 document.getElementById("adminLoginForm").classList.add("hidden");
 document.getElementById("adminDataArea").classList.remove("hidden");
 loadAdminData();
@@ -906,7 +906,7 @@ tbody.appendChild(tr);
 
 function exportToExcel() {
 const data = JSON.parse(localStorage.getItem("ts_enquiries") || "[]");
-if(data.length ===0) {
+if(data.length === 0) {
 alert("No data available to export!");
 return;
 }
