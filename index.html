@@ -254,7 +254,7 @@ Your trusted local service partner in <strong class="text-white">Kishanganj, Bih
 </div>
 </div>
 
-<!-- HERO VISUAL CARDS / POSTER BANNER STYLE WITH EMBEDDED IMAGE -->
+<!-- HERO VISUAL CARDS / POSTER BANNER STYLE WITH UPLOADED IMAGE DIRECTLY DISPLAYED -->
 <div class="bg-gradient-to-br from-purple-900 via-blue-900 to-slate-900 rounded-3xl p-6 sm:p-8 text-white shadow-2xl border-2 border-green-500 relative overflow-hidden">
 <div class="absolute -right-10 -top-10 w-40 h-40 bg-green-500/10 rounded-full blur-2xl"></div>
 <div class="flex items-center justify-between mb-4">
@@ -262,9 +262,9 @@ Your trusted local service partner in <strong class="text-white">Kishanganj, Bih
 <span class="text-xs text-yellow-300 font-bold"><i class="fa-solid fa-bolt"></i> Fast Approval</span>
 </div>
 <div class="text-center my-4">
-<!-- EMBEDDED BASE64 IMAGE TO GUARANTEE DISPLAY WITHOUT GITHUB PATH ISSUES -->
-<div class="w-full h-44 mx-auto rounded-2xl bg-black/40 p-1 border-2 border-green-400 shadow-xl overflow-hidden mb-3 flex items-center justify-center">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="DSC USB Crypto Token Setup" class="w-full h-full object-cover rounded-xl hover:scale-105 transition duration-350" id="tokenImg">
+<!-- DIRECTLY EMBEDDED YOUR UPLOADED IMAGE FILE NAME HERE -->
+<div class="w-full h-auto mx-auto rounded-2xl bg-black/40 p-1 border-2 border-green-400 shadow-xl overflow-hidden mb-3 flex items-center justify-center">
+<img src="file_0000000028d481fa8d326cc8e27514dd.png" alt="TrustSign DSC Banner" class="w-full h-auto object-cover rounded-xl hover:scale-105 transition duration-350">
 </div>
 <h3 class="text-xl sm:text-2xl font-extrabold tracking-wide">CLASS 3 DIGITAL SIGNATURE CERTIFICATE</h3>
 <p class="text-xs text-green-300 font-semibold mt-1">USB Crypto Token • GST • Income Tax • e-Tenders • MCA</p>
@@ -769,20 +769,6 @@ Login Admin
 </div>
 
 <script>
-// Auto load user's actual uploaded image into the token card dynamically if available
-window.addEventListener('DOMContentLoaded', () => {
-const imgElement = document.getElementById('tokenImg');
-// If user has '1000366967.png' or '1000366935_2.png' in repository root, it will load automatically
-imgElement.src = "1000366967.png";
-imgElement.onerror = function() {
-  this.src = "1000366935_2.png";
-  this.onerror = function() {
-    // Fallback if filename is different
-    this.src = "Dsc/1000366967.png";
-  }
-};
-});
-
 function toggleMenu() {
 document.getElementById("mobileMenu").classList.toggle("hidden");
 }
@@ -883,8 +869,8 @@ document.getElementById("adminModal").classList.add("hidden");
 }
 
 function verifyAdminPassword() {
-const inputPass = document.getElementById("adminPassInput").value;
-if(inputPass === "9473371370Rr@") {
+const inputPass = document.getElementById("adminPassInput50" || "adminPassInput").value;
+if(document.getElementById("adminPassInput").value === "9473371370Rr@") {
 document.getElementById("adminLoginForm").classList.add("hidden");
 document.getElementById("adminDataArea").classList.remove("hidden");
 loadAdminData();
@@ -920,7 +906,7 @@ tbody.appendChild(tr);
 
 function exportToExcel() {
 const data = JSON.parse(localStorage.getItem("ts_enquiries") || "[]");
-if(data.length === 0) {
+if(data.length ===0) {
 alert("No data available to export!");
 return;
 }
