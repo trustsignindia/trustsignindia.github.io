@@ -75,7 +75,7 @@ color:transparent;
 }
 
 .visual-card { transition:all .35s ease; }
-.visual-card:hover { transform:translateY(-8px) scale(1.02); shadow:0 20px 45px rgba(15,23,42,.25); }
+.visual-card:hover { transform:translateY(-8px) scale(1.02); }
 
 .glass {
 background:rgba(255,255,255,.10);
@@ -262,7 +262,6 @@ Your trusted local service partner in <strong class="text-white">Kishanganj, Bih
 <span class="text-xs text-yellow-300 font-bold"><i class="fa-solid fa-bolt"></i> Fast Approval</span>
 </div>
 <div class="text-center my-4">
-<!-- DIRECTLY EMBEDDED YOUR UPLOADED IMAGE FILE NAME HERE -->
 <div class="w-full h-auto mx-auto rounded-2xl bg-black/40 p-1 border-2 border-green-400 shadow-xl overflow-hidden mb-3 flex items-center justify-center">
 <img src="file_0000000028d481fa8d326cc8e27514dd.png" alt="TrustSign DSC Banner" class="w-full h-auto object-cover rounded-xl hover:scale-105 transition duration-350">
 </div>
@@ -338,16 +337,20 @@ Your trusted local service partner in <strong class="text-white">Kishanganj, Bih
 <div class="mt-6 font-bold text-red-200">Open RTPS Portal →</div>
 </a>
 
-<!-- DIGITAL SIGNATURE CERTIFICATE CARD -->
-<div class="visual-card bg-gradient-to-br from-purple-600 to-indigo-900 rounded-3xl p-8 text-white shadow-xl block">
-<div class="w-full h-32 rounded-2xl bg-white/20 p-1 border border-white/30 mb-6 flex items-center justify-center overflow-hidden">
-<i class="fa-solid fa-shield-halved text-5xl text-yellow-300"></i>
+<!-- DIGITAL SIGNATURE CERTIFICATE CARD WITH EMBEDDED PHOTO/BANNER & CLICKABLE LINK -->
+<div class="visual-card bg-gradient-to-br from-purple-600 to-indigo-900 rounded-3xl p-8 text-white shadow-xl flex flex-col justify-between">
+<div>
+<a href="https://ekyc.speedsignca.com/apply-new-dsc" target="_blank" rel="noopener noreferrer" class="block group">
+<div class="w-full h-32 rounded-2xl bg-black/40 p-1 border-2 border-yellow-400 mb-6 flex items-center justify-center overflow-hidden shadow-inner group-hover:scale-105 transition duration-350">
+<img src="file_0000000028d481fa8d326cc8e27514dd.png" alt="DSC Digital Signature Banner" class="w-full h-full object-cover rounded-xl">
 </div>
-<h3 class="text-2xl font-extrabold">Digital Signature Certificate (DSC)</h3>
+<h3 class="text-2xl font-extrabold group-hover:text-yellow-300 transition">Digital Signature Certificate (DSC)</h3>
+</a>
 <p class="text-sm text-white/80 mt-2">Class 3 DSC USB Token for GST, Income Tax, MCA, Tenders & ICEGATE.</p>
+</div>
 <div class="mt-6 flex flex-wrap gap-2 items-center">
-<a href="https://ekyc.speedsignca.com/apply-new-dsc" target="_blank" rel="noopener noreferrer" class="bg-white text-purple-900 px-4 py-2 rounded-lg font-bold text-xs">Apply SpeedSign →</a>
-<button onclick="copyBPCodeDirect()" class="bg-amber-400 text-slate-900 px-3 py-2 rounded-lg font-bold text-xs"><i class="fa-solid fa-copy mr-1"></i> Copy BP Code</button>
+<a href="https://ekyc.speedsignca.com/apply-new-dsc" target="_blank" rel="noopener noreferrer" class="bg-white text-purple-900 hover:bg-yellow-300 px-4 py-2 rounded-lg font-bold text-xs transition shadow">Apply SpeedSign →</a>
+<button onclick="copyBPCodeDirect()" class="bg-amber-400 hover:bg-amber-500 text-slate-900 px-3 py-2 rounded-lg font-bold text-xs transition"><i class="fa-solid fa-copy mr-1"></i> Copy BP Code</button>
 </div>
 </div>
 
