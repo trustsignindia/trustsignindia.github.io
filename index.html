@@ -181,6 +181,16 @@ linear-gradient(135deg,#422006,#713f12,#92400e);
 </button>
 </div>
 
+<!-- SEARCH BAR IN HEADER -->
+<div class="px-4 py-2 bg-slate-50 border-t flex justify-center">
+<div class="relative w-full max-w-xl">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+<i class="fa-solid fa-search"></i>
+</span>
+<input type="text" id="siteSearch" onkeyup="searchServices()" placeholder="Search services (e.g. PAN, DSC, Driving Licence, Scholarship)..." class="w-full pl-10 pr-4 py-2 border rounded-full text-sm outline-none focus:ring-2 focus:ring-green-500 bg-white shadow-inner">
+</div>
+</div>
+
 <div id="mobileMenu" class="hidden md:hidden border-t bg-white">
 <div class="flex flex-col p-4 gap-4 font-semibold">
 <a href="#home" onclick="toggleMenu()">Home</a>
@@ -220,7 +230,16 @@ Digital Signature • PAN • GST • Driving Licence • Scholarships • Gover
 Your trusted local service partner in <strong class="text-white">Kishanganj, Bihar</strong> for Digital Signature Certificates, PAN Card, Driving Licence, Ration Card, Student Scholarships, EPF, RTPS, Contractor Licence and all online government portals.
 </p>
 
-<div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
+<!-- TOP BP CODE COPY QUICK BAR -->
+<div class="mt-6 flex flex-wrap justify-center lg:justify-start items-center gap-3 bg-white/10 p-3 rounded-2xl border border-white/20 backdrop-blur-md">
+<span class="text-xs font-bold text-yellow-300"><i class="fa-solid fa-bolt mr-1"></i> SpeedSign BP Code:</span>
+<span class="bg-black/30 px-3 py-1.5 rounded-lg text-xs font-mono font-bold text-white">dsc.kishanganj@gmail.com</span>
+<button onclick="copyBPCodeDirect()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold px-3 py-1.5 rounded-lg text-xs transition">
+<i class="fa-solid fa-copy mr-1"></i> Copy ID
+</button>
+</div>
+
+<div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-6">
 <a href="#services" class="bg-green-600 hover:bg-green-700 px-7 py-3 rounded-xl font-bold shadow-lg">
 <i class="fa-solid fa-list-check mr-2"></i> Explore Services
 </a>
@@ -697,6 +716,21 @@ navigator.clipboard.writeText(bpText).then(() => {
 alert("BP Code copied successfully: " + bpText);
 }).catch(err => {
 console.error("Failed to copy: ", err);
+});
+}
+
+// SEARCH SERVICES FUNCTION
+function searchServices() {
+let input = document.getElementById('siteSearch').value.toLowerCase();
+let cards = document.querySelectorAll('.visual-card');
+
+cards.forEach(card => {
+let text = card.innerText.toLowerCase();
+if(text.includes(input)) {
+card.style.display = "block";
+} else {
+card.style.display = "none";
+}
 });
 }
 
