@@ -142,8 +142,9 @@ linear-gradient(135deg,#422006,#713f12,#92400e);
 <a href="mailto:trustsignindia@gmail.com"><i class="fa-solid fa-envelope text-green-400 mr-1"></i>trustsignindia@gmail.com</a>
 </div>
 <div class="flex gap-2 items-center">
-<span class="bg-green-600 px-2 py-1 rounded">FAST SERVICE</span>
-<span class="bg-blue-600 px-2 py-1 rounded">SECURE PROCESS</span>
+<button onclick="openPartnerModal()" class="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-xs font-bold transition animate-pulse">
+<i class="fa-solid fa-handshake mr-1"></i> Become a DSC Partner
+</button>
 <button onclick="openAdminModal()" class="bg-purple-600 hover:bg-purple-700 text-white px-2 py-1 rounded text-xs font-bold transition">
 <i class="fa-solid fa-user-lock mr-1"></i> Admin Portal
 </button>
@@ -170,8 +171,10 @@ linear-gradient(135deg,#422006,#713f12,#92400e);
 <a href="#about" class="hover:text-green-600">About</a>
 <a href="#location" class="hover:text-green-600">Location</a>
 <a href="#reviews" class="hover:text-yellow-600">Reviews</a>
-<a href="#contact" class="bg-green-600 text-white px-5 py-2.5 rounded-lg hover:bg-green-700">Contact Us</a>
-<button onclick="openAdminModal()" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">
+<button onclick="openPartnerModal()" class="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-4 py-2 rounded-lg hover:from-green-700 hover:to-emerald-700 font-bold shadow">
+<i class="fa-solid fa-user-plus mr-1"></i> Join Partner
+</button>
+<button onclick="openAdminModal()" class="bg-purple-600 text-white px-3 py-2 rounded-lg hover:bg-purple-700">
 <i class="fa-solid fa-lock mr-1"></i> Admin
 </button>
 </nav>
@@ -200,7 +203,9 @@ linear-gradient(135deg,#422006,#713f12,#92400e);
 <a href="#about" onclick="toggleMenu()">About</a>
 <a href="#location" onclick="toggleMenu()">Location</a>
 <a href="#reviews" onclick="toggleMenu()">Reviews</a>
-<a href="#contact" onclick="toggleMenu()" class="bg-green-600 text-white text-center py-2 rounded-lg">Contact Us</a>
+<button onclick="toggleMenu(); openPartnerModal();" class="bg-green-600 text-white py-2 rounded-lg text-center font-bold">
+<i class="fa-solid fa-handshake mr-1"></i> Become a DSC Partner
+</button>
 <button onclick="toggleMenu(); openAdminModal();" class="bg-purple-600 text-white py-2 rounded-lg text-center font-bold">
 <i class="fa-solid fa-user-lock mr-1"></i> Admin Portal
 </button>
@@ -240,14 +245,11 @@ Your trusted local service partner in <strong class="text-white">Kishanganj, Bih
 </div>
 
 <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-6">
-<a href="#services" class="bg-green-600 hover:bg-green-700 px-7 py-3 rounded-xl font-bold shadow-lg">
-<i class="fa-solid fa-list-check mr-2"></i> Explore Services
-</a>
-<a href="https://wa.me/918709638639?text=Hello%20TrustSign%20Digital%20Suvidha%20Kendra%2C%20I%20need%20information%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-600 px-7 py-3 rounded-xl font-bold">
+<button onclick="openPartnerModal()" class="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 px-7 py-3 rounded-xl font-bold shadow-xl text-white">
+<i class="fa-solid fa-user-plus mr-2"></i> Become DSC Partner
+</button>
+<a href="https://wa.me/918709638639?text=Hello%20TrustSign%20Digital%20Suvidha%20Kendra%2C%20I%20need%20information%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-700 px-7 py-3 rounded-xl font-bold text-white">
 <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
-</a>
-<a href="tel:+918709638639" class="bg-white/10 border border-white/30 hover:bg-white/20 px-7 py-3 rounded-xl font-bold">
-<i class="fa-solid fa-phone mr-2"></i> Call Now
 </a>
 </div>
 </div>
@@ -400,9 +402,9 @@ SpeedSign par DSC apply karte waqt form mein <strong>BP Code</strong> option sel
 <i class="fa-solid fa-copy mr-1"></i> Copy ID
 </button>
 </div>
-<a href="https://ekyc.speedsignca.com/apply-new-dsc" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-700 text-white font-extrabold px-7 py-3 rounded-xl shadow-lg transition">
-Apply on SpeedSign →
-</a>
+<button onclick="openPartnerModal()" class="bg-green-600 hover:bg-green-700 text-white font-extrabold px-7 py-3 rounded-xl shadow-lg transition">
+Become a Partner Now →
+</button>
 </div>
 </div>
 </section>
@@ -651,11 +653,69 @@ Powered By <span class="text-green-400 font-bold">4 STAR MOBILE ★</span>
 <a href="https://wa.me/918709638639?text=Hello%20TrustSign%20Digital%20Suvidha%20Kendra" target="_blank" class="floating-whatsapp bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-xl"><i class="fa-brands fa-whatsapp"></i></a>
 <a href="tel:+918709638639" class="floating-call bg-blue-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-xl shadow-xl"><i class="fa-solid fa-phone"></i></a>
 
+<!-- BECOME A DSC PARTNER POPUP MODAL -->
+<div id="partnerModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-[1001] hidden flex items-center justify-center p-4 overflow-y-auto">
+<div class="bg-white rounded-3xl w-full max-w-lg overflow-hidden shadow-2xl border my-8">
+<div class="bg-gradient-to-r from-green-600 to-emerald-700 text-white p-5 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center text-xl"><i class="fa-solid fa-handshake"></i></div>
+<div>
+<h3 class="font-extrabold text-lg">Become a DSC Partner</h3>
+<p class="text-xs text-green-100">Join TrustSign Network & Start Earning</p>
+</div>
+</div>
+<button onclick="closePartnerModal()" class="text-white/80 hover:text-white text-xl p-2"><i class="fa-solid fa-xmark"></i></button>
+</div>
+
+<form id="partnerForm" class="p-6 space-y-4 max-h-[75vh] overflow-y-auto">
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1">Full Name (As per Aadhar/PAN)</label>
+<input type="text" id="pName" required class="w-full px-4 py-2.5 border rounded-xl text-sm focus:ring-2 focus:ring-green-500 outline-none" placeholder="Enter your full name">
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1">Mobile Number (WhatsApp)</label>
+<input type="tel" id="pMobile" required class="w-full px-4 py-2.5 border rounded-xl text-sm focus:ring-2 focus:ring-green-500 outline-none" placeholder="Mobile Number">
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1">Email ID</label>
+<input type="email" id="pEmail" required class="w-full px-4 py-2.5 border rounded-xl text-sm focus:ring-2 focus:ring-green-500 outline-none" placeholder="Email Address">
+</div>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1">PAN Card Number</label>
+<input type="text" id="pPan" required class="w-full px-4 py-2.5 border rounded-xl text-sm uppercase focus:ring-2 focus:ring-green-500 outline-none" placeholder="ABCDE1234F">
+</div>
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1">Aadhaar Card Number</label>
+<input type="text" id="pAadhar" required maxlength="12" class="w-full px-4 py-2.5 border rounded-xl text-sm focus:ring-2 focus:ring-green-500 outline-none" placeholder="12 Digit Aadhaar Number">
+</div>
+</div>
+
+<div>
+<label class="block text-xs font-bold text-slate-700 mb-1">Passport Size Photo (Upload)</label>
+<input type="file" id="pPhoto" accept="image/*" required class="w-full px-3 py-2 border rounded-xl text-xs bg-slate-50 file:mr-4 file:py-1 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-green-50 file:text-green-700 hover:file:bg-green-100">
+</div>
+
+<div class="bg-amber-50 border border-amber-200 p-3 rounded-xl text-[11px] text-amber-800">
+<i class="fa-solid fa-triangle-exclamation mr-1"></i> Note: Details verify hone ke baad aapko <strong>SpeedSign BP Code</strong> assign kiya jayega.
+</div>
+
+<button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-extrabold py-3 rounded-xl transition shadow-lg text-sm">
+<i class="fa-brands fa-whatsapp mr-1"></i> Submit Partner Application
+</button>
+</form>
+</div>
+</div>
+
 <!-- ADMIN MODAL -->
 <div id="adminModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-[1000] hidden flex items-center justify-center p-4">
 <div class="bg-white rounded-2xl w-full max-w-3xl overflow-hidden shadow-2xl border">
 <div class="bg-brandDark text-white p-5 flex justify-between items-center">
-<h3 class="font-bold text-lg"><i class="fa-solid fa-user-shield text-green-400 mr-2"></i> Admin Portal - Enquiries Data</h3>
+<h3 class="font-bold text-lg"><i class="fa-solid fa-user-shield text-green-400 mr-2"></i> Admin Portal - Enquiries & Partners Data</h3>
 <button onclick="closeAdminModal()" class="text-slate-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
 </div>
 
@@ -663,7 +723,7 @@ Powered By <span class="text-green-400 font-bold">4 STAR MOBILE ★</span>
 <div id="adminLoginForm" class="p-8 text-center">
 <i class="fa-solid fa-lock text-5xl text-purple-600 mb-4"></i>
 <h4 class="text-xl font-bold mb-2">Enter Admin Password</h4>
-<p class="text-xs text-slate-500 mb-6">Enter password to view customer enquiries data</p>
+<p class="text-xs text-slate-500 mb-6">Enter password to view customer enquiries and partner registrations</p>
 <input id="adminPassInput" type="password" placeholder="Enter Password" class="border px-4 py-3 rounded-xl w-full max-w-xs mb-4 text-center">
 <br>
 <button onclick="verifyAdminPassword()" class="bg-purple-600 hover:bg-purple-700 text-white font-bold px-6 py-2.5 rounded-xl">
@@ -674,7 +734,7 @@ Login Admin
 <!-- DATA DASHBOARD -->
 <div id="adminDataArea" class="p-6 hidden">
 <div class="flex justify-between items-center mb-4">
-<span class="font-bold text-slate-700" id="totalEnquiryCount">Total Enquiries: 0</span>
+<span class="font-bold text-slate-700" id="totalEnquiryCount">Total Data: 0</span>
 <div class="flex gap-2">
 <button onclick="exportToExcel()" class="bg-green-600 hover:bg-green-700 text-white text-xs font-bold px-4 py-2 rounded-lg">
 <i class="fa-solid fa-file-excel mr-1"></i> Export Excel
@@ -689,10 +749,11 @@ Login Admin
 <table class="w-full text-left text-xs">
 <thead class="bg-slate-100 text-slate-700 border-b">
 <tr>
-<th class="p-3">Date & Time</th>
+<th class="p-3">Date</th>
+<th class="p-3">Type</th>
 <th class="p-3">Name</th>
 <th class="p-3">Phone</th>
-<th class="p-3">Service</th>
+<th class="p-3">Details / PAN / Aadhar</th>
 </tr>
 </thead>
 <tbody id="enquiryTableBody" class="divide-y">
@@ -734,6 +795,49 @@ card.style.display = "none";
 });
 }
 
+// PARTNER MODAL LOGIC
+function openPartnerModal() {
+document.getElementById("partnerModal").classList.remove("hidden");
+}
+
+function closePartnerModal() {
+document.getElementById("partnerModal").classList.add("hidden");
+}
+
+// PARTNER FORM SUBMISSION
+document.getElementById("partnerForm").addEventListener("submit", function(e) {
+e.preventDefault();
+const name = document.getElementById("pName").value.trim();
+const phone = document.getElementById("pMobile").value.trim();
+const email = document.getElementById("pEmail").value.trim();
+const pan = document.getElementById("pPan").value.trim().toUpperCase();
+const aadhar = document.getElementById("pAadhar").value.trim();
+const photoInput = document.getElementById("pPhoto");
+const photoName = photoInput.files.length > 0 ? photoInput.files[0].name : "No Photo";
+const date = new Date().toLocaleString("en-IN");
+
+// Save Data Locally
+const newEntry = { date, type: "DSC Partner", name, phone, service: `Email: ${email} | PAN: ${pan} | Aadhar: ${aadhar} | Photo: ${photoName}` };
+let existingData = JSON.parse(localStorage.getItem("ts_enquiries") || "[]");
+existingData.unshift(newEntry);
+localStorage.setItem("ts_enquiries", JSON.stringify(existingData));
+
+// WhatsApp Message Format
+const message = `*New DSC Partner Application*%0A%0A` +
+                `*Name:* ${encodeURIComponent(name)}%0A` +
+                `*Mobile:* ${encodeURIComponent(phone)}%0A` +
+                `*Email:* ${encodeURIComponent(email)}%0A` +
+                `*PAN:* ${encodeURIComponent(pan)}%0A` +
+                `*Aadhaar:* ${encodeURIComponent(aadhar)}%0A` +
+                `*Photo File:* ${encodeURIComponent(photoName)}`;
+
+window.open(`https://wa.me/918709638639?text=${message}`, "_blank");
+
+closePartnerModal();
+this.reset();
+alert("Partner application submitted successfully and forwarded to WhatsApp!");
+});
+
 // SAVE ENQUIRY LOCAL STORAGE + WHATSAPP REDIRECT
 document.getElementById("inquiryForm").addEventListener("submit", function(e) {
 e.preventDefault();
@@ -743,7 +847,7 @@ const service = document.getElementById("service").value;
 const date = new Date().toLocaleString("en-IN");
 
 // Save Data Locally
-const newEntry = { date, name, phone, service };
+const newEntry = { date, type: "Enquiry", name, phone, service };
 let existingData = JSON.parse(localStorage.getItem("ts_enquiries") || "[]");
 existingData.unshift(newEntry);
 localStorage.setItem("ts_enquiries", JSON.stringify(existingData));
@@ -754,7 +858,6 @@ const message = `*New Service Enquiry*%0A%0A` +
                 `*Phone:* ${encodeURIComponent(phone)}%0A` +
                 `*Service:* ${encodeURIComponent(service)}`;
 
-// WhatsApp Redirect
 window.open(`https://wa.me/918709638639?text=${message}`, "_blank");
 
 this.reset();
@@ -785,22 +888,24 @@ alert("Wrong Password! Please try again.");
 
 function loadAdminData() {
 const data = JSON.parse(localStorage.getItem("ts_enquiries") || "[]");
-document.getElementById("totalEnquiryCount").innerText = "Total Enquiries: " + data.length;
+document.getElementById("totalEnquiryCount").innerText = "Total Records: " + data.length;
 const tbody = document.getElementById("enquiryTableBody");
 tbody.innerHTML = "";
 
 if(data.length === 0) {
-tbody.innerHTML = "<tr><td colspan='4' class='p-4 text-center text-slate-400'>No Enquiries Found Yet</td></tr>";
+tbody.innerHTML = "<tr><td colspan='5' class='p-4 text-center text-slate-400'>No Records Found Yet</td></tr>";
 return;
 }
 
 data.forEach(item => {
+const badgeColor = item.type === "DSC Partner" ? "bg-green-100 text-green-800" : "bg-blue-100 text-blue-800";
 const tr = document.createElement("tr");
 tr.innerHTML = `
 <td class="p-3">${item.date}</td>
+<td class="p-3"><span class="${badgeColor} px-2 py-0.5 rounded text-[10px] font-bold">${item.type}</span></td>
 <td class="p-3 font-semibold">${item.name}</td>
 <td class="p-3">${item.phone}</td>
-<td class="p-3"><span class="background-blue text-blue-800 px-2 py-0.5 rounded text-[10px] font-bold">${item.service}</span></td>
+<td class="p-3 text-slate-600">${item.service}</td>
 `;
 tbody.appendChild(tr);
 });
@@ -814,12 +919,12 @@ return;
 }
 const worksheet = XLSX.utils.json_to_sheet(data);
 const workbook = XLSX.utils.book_new();
-XLSX.utils.book_append_sheet(workbook, worksheet, "Enquiries");
-XLSX.writeFile(workbook, "TrustSign_Enquiries.xlsx");
+XLSX.utils.book_append_sheet(workbook, worksheet, "TrustSign_Data");
+XLSX.writeFile(workbook, "TrustSign_Partners_Enquiries.xlsx");
 }
 
 function clearEnquiryData() {
-if(confirm("Are you sure you want to delete all enquiry data?")) {
+if(confirm("Are you sure you want to delete all stored data?")) {
 localStorage.removeItem("ts_enquiries");
 loadAdminData();
 }
